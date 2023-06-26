@@ -5,6 +5,8 @@
   width: 100%;
   padding: 0 50px;
   font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 0;
 
   @media (max-width: 768px) {
     padding: 0 10px;
@@ -54,6 +56,11 @@
   color: #fff;
   font-size: 18px;
   font-weight: 600;
+
+  &:hover {
+    background: yellow;
+    color: #000;
+  }
 }
 
 .nav_link_item {
