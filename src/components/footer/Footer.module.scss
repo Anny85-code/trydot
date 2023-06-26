@@ -1,12 +1,13 @@
 .footer_main_cont {
-  height: 500px;
+  height: 650px;
   background: #1c1a1a;
   color: #fff;
-  padding: 100px 10px;
+  padding: 100px 30px;
   font-family: 'Roboto', sans-serif;
 
   ul {
     list-style-type: none;
+    padding: 0;
   }
 }
 
@@ -38,11 +39,53 @@
 }
 
 #media_icon {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   border: 1px solid #fff;
   color: #fff;
   text-align: center;
-  margin: auto;
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.form_cont {
+  input {
+    height: 60px;
+    width: 400px;
+
+    &::placeholder {
+      padding: 0 10px;
+    }
+  }
+
+  button {
+    height: 62px;
+    width: 200px;
+    background: yellow;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.footer_inner2_cont {
+  margin: 150px 0 20px 0;
+
+  ul:nth-child(1){
+    li {
+      font-size: 20px;
+      font-weight: 200;
+    }
+  }
+}
+
+.ul_cont {
+  margin: 50px 0 0 0;
+
+  li {
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }

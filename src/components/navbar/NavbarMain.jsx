@@ -94,7 +94,6 @@ const NavbarMain = () => {
               title="Portfolio"
               id={`navbarScrollingDropdown ${styles.nav__link}`}
               className={styles.nav_link}
-              style={{ color: 'red' }}
             >
               <NavDropdown.Item
                 href="#action3"
@@ -113,7 +112,6 @@ const NavbarMain = () => {
               title="Blog"
               id={`navbarScrollingDropdown ${styles.nav__link}`}
               className={styles.nav_link}
-              style={{ color: 'red' }}
             >
               <NavDropdown.Item
                 href="#action3"
@@ -152,7 +150,7 @@ const NavbarMain = () => {
           </Nav>
 
           <Button variant="outline-success" className={styles.navBtn}>
-            +2347036471219
+            +234-7036471219
           </Button>
         </Navbar.Collapse>
       </Container>
