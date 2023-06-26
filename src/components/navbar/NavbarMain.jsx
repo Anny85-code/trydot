@@ -1,6 +1,5 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -13,8 +12,8 @@ const NavbarMain = () => {
       className={`bg-body-tertiary ${styles.navbar_main_cont}`}
     >
       <Container fluid>
-        <Navbar.Brand href="#" className={styles.nav_link}>
-          Navbar scroll
+        <Navbar.Brand href="#" className={styles.logo}>
+          TRYDOT SYNERGY
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -26,39 +25,81 @@ const NavbarMain = () => {
             <Nav.Link href="#action1" className={styles.nav_link}>
               Home
             </Nav.Link>
-            <Nav.Link href="#action2" className={styles.nav_link}>
-              Link
-            </Nav.Link>
             <NavDropdown
-              title="Link"
-              id="navbarScrollingDropdown"
+              title="Pages"
+              id={`navbarScrollingDropdown ${styles.nav__link}`}
               className={styles.nav_link}
-              style={{color: 'blue'}}
+              style={{ color: 'red' }}
             >
-              <NavDropdown.Item href="#action3" className={styles.nav_link}>
+              <NavDropdown.Item href="#action3" className={styles.nav_link_item}>
                 Action
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" className={styles.nav_link}>
+              <NavDropdown.Item href="#action4" className={styles.nav_link_item}>
                 Another action
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" className={styles.nav_link}>
+              <NavDropdown.Item href="#action5" className={styles.nav_link_item}>
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title="Portfolio"
+              id={`navbarScrollingDropdown ${styles.nav__link}`}
+              className={styles.nav_link}
+              style={{ color: 'red' }}
+            >
+              <NavDropdown.Item href="#action3" className={styles.nav_link_item}>
+                Action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4" className={styles.nav_link_item}>
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5" className={styles.nav_link_item}>
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title="Blog"
+              id={`navbarScrollingDropdown ${styles.nav__link}`}
+              className={styles.nav_link}
+              style={{ color: 'red' }}
+            >
+              <NavDropdown.Item href="#action3" className={styles.nav_link_item}>
+                Action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4" className={styles.nav_link_item}>
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5" className={styles.nav_link_item}>
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title="Shop"
+              id={`navbarScrollingDropdown ${styles.nav__link}`}
+              className={styles.nav_link}
+              style={{ color: 'red' }}
+            >
+              <NavDropdown.Item href="#action3" className={styles.nav_link_item}>
+                Action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4" className={styles.nav_link_item}>
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5" className={styles.nav_link_item}>
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled className={styles.nav_link}>
-              Link
+             Elements
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            {/* <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            /> */}
-            <Button variant="outline-success">Search</Button>
-          </Form>
+        
+            <Button variant="outline-success" className={styles.navBtn}>+2347036471219</Button>
+        
         </Navbar.Collapse>
       </Container>
     </Navbar>

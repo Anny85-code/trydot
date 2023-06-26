@@ -3,8 +3,42 @@
   height: 100px;
   box-shadow: 1px 1px 10px rgb(0 0 0 / 0.4);
   width: 100%;
+  padding: 0 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  color: #000;
+  font-size: 40px;
+  font-weight: bolder;
+
+  &:hover {
+    color: #000;
+  }
 }
 
 .nav_link {
   color: #000 !important;
+  margin: 0 30px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+
+  a {
+    color: #000;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.navBtn {
+  height: 60px;
+  width: 200px;
+  border-radius: 30px;
+  padding: 5px 20px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
 }
