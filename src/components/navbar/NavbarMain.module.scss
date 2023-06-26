@@ -5,6 +5,14 @@
   width: 100%;
   padding: 0 50px;
   font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
+}
+
+.Nav {
+  margin-left: auto;
 }
 
 .logo {
@@ -14,6 +22,11 @@
 
   &:hover {
     color: #000;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 25px;
+    font-weight: bold;
   }
 }
 
@@ -41,4 +54,17 @@
   color: #fff;
   font-size: 18px;
   font-weight: 600;
+}
+
+.nav_link_item {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.navbar_collapse {
+  height: 100vh !important;
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+  }
 }
